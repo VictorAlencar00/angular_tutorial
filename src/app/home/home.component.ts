@@ -1,9 +1,9 @@
-import { Component, inject } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { HousingLocationComponent } from '../housing-location/housing-location.component'
-import { type HousingLocation } from '../housinglocation'
-import { HousingService } from '../housing.service'
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { HousingLocation } from '../housinglocation';
+import { HousingService } from '../housing.service';
 
 @Component({
   selector: 'app-home',
@@ -26,16 +26,16 @@ import { HousingService } from '../housing.service'
     </app-housing-location>
   </section>
   `,
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 
 export class HomeComponent {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa'
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
-  housingLocationList: HousingLocation[] = []
-  housingService: HousingService = inject(HousingService)
+  housingLocationList: HousingLocation[] = [];
+  housingService: HousingService = inject(HousingService);
 
-  constructor () {
-    this.housingLocationList = this.housingService.getAllHousingLocations()
+  constructor() {
+    this.housingLocationList = this.housingService.getAllHousingLocations();
   }
 }

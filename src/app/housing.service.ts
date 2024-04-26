@@ -1,12 +1,13 @@
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
-import { type HousingLocation } from './housinglocation'
+import { HousingLocation } from './housinglocation';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HousingService {
-  private readonly baseUrl: any = 'https://angular.io/assets/images/tutorials/faa'
+  private baseUrl: any = 'https://angular.io/assets/images/tutorials/faa'
+  constructor() { }
 
   housingLocationList: HousingLocation[] = [
     {
@@ -109,13 +110,13 @@ export class HousingService {
       wifi: true,
       laundry: true
     }
-  ]
+  ];
 
-  getAllHousingLocations (): HousingLocation[] {
-    return this.housingLocationList
+  getAllHousingLocations(): HousingLocation[] {
+    return this.housingLocationList;
   }
 
-  getHousingLocationById (id: number): HousingLocation | undefined {
-    return this.housingLocationList.find(housingLocation => housingLocation.id === id)
+  getHousingLocationById(id: number): HousingLocation | undefined {
+    return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
 }
