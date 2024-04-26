@@ -4,12 +4,12 @@
  */
 import {
   bootstrapApplication,
-  provideProtractorTestingSupport,
-} from '@angular/platform-browser';
-import { provideRouter } from '@angular/router';
-import { AppComponent } from './app/app.component';
+  provideProtractorTestingSupport
+} from '@angular/platform-browser'
+import { provideRouter } from '@angular/router'
+import { AppComponent } from './app/app.component'
 
-import routeConfig from './app/routes';
+import routeConfig from './app/routes'
 
 bootstrapApplication(AppComponent,
   {
@@ -18,4 +18,4 @@ bootstrapApplication(AppComponent,
       provideRouter(routeConfig)
     ]
   }
-).catch(err => console.error(err));
+).catch(err => { console.error(err) })

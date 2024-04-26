@@ -1,8 +1,7 @@
-import { Component, Inject } from '@angular/core';
-import { HomeComponent } from './home/home.component';
+import { Component } from '@angular/core'
+import { HomeComponent } from './home/home.component'
 
-import { HousingService } from './housing.service';
-import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -25,8 +24,8 @@ import { RouterModule } from '@angular/router';
       </section>
     </main>
   `,
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'homes';
+  title = 'homes'
 }

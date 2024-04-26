@@ -1,8 +1,7 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component, Input } from '@angular/core'
+import { RouterLink, RouterOutlet } from '@angular/router'
 
-import { HousingLocation } from '../housinglocation';
+import { type HousingLocation } from '../housinglocation'
 
 @Component({
   selector: 'app-housing-location',
@@ -22,8 +21,8 @@ import { HousingLocation } from '../housinglocation';
       <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
     </section>
   `,
-  styleUrl: './housing-location.component.css',
+  styleUrl: './housing-location.component.css'
 })
 export class HousingLocationComponent {
-  @Input() housingLocation!: HousingLocation;
+  @Input() housingLocation!: HousingLocation
 }

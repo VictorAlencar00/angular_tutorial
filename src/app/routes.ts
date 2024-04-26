@@ -1,6 +1,6 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { DetailsComponent } from './details/details.component';
+import { type Routes } from '@angular/router'
+import { HomeComponent } from './home/home.component'
+import { DetailsComponent } from './details/details.component'
 
 const routeConfig: Routes = [
   {
@@ -13,6 +13,6 @@ const routeConfig: Routes = [
     component: DetailsComponent,
     title: 'Home details'
   }
-];
+]
 
-export default routeConfig;
+export default routeConfig
