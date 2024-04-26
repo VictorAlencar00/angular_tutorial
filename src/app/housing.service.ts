@@ -6,7 +6,7 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-
+  private baseUrl: any = 'https://angular.io/assets/images/tutorials/faa'
   constructor() { }
 
   housingLocationList: HousingLocation[] = [
